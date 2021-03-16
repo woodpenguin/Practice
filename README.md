@@ -1,2 +1,2 @@
 # Practice
-Assignments over my computer science classes
+Assignments completed/in progress in my computer science classes
