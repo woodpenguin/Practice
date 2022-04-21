@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+
+            <link rel="stylesheet" href="hw2.css">
+
+            <title>Registration Form</title>
+
+        </head>
+
+    <body>
+
+        <h1>Registration Form</h1>
+
+        <form action="">
+
+            <div>
+
+                <p class="" id="user-hide">Only letters allowed in this field</p>
+
+                <label for="username">Username</label>
+
+                <input type="text" name="username" placeholder="Enter your username" id="username">
+
+            </div>
+
+            <div>
+
+                <p class="" id="passwd-hide"></p>
+
+                <label for="password">Password</label>
+
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+
+            </div>
+
+            <div>
+
+                <p class="" id="id-hide"></p>
+
+                <label for="student-id">Student ID Number</label>
+
+                <input type="number" name="student-id" id="student-id" placeholder="Enter ID">
+
+            </div>
+
+            <div>
+
+                <label for="message">Message</label>
+
+            </div>
+
+            <div>
+
+                <textarea name="message" id="message" cols="30" placeholder="Enter your message here" rows="10"></textarea><span id="word-count">25</span> <span>words remaining</span>
+
+            </div>
+
+            <button type="button" id="btn">Submit</button>
+
+        </form>
+
+        <h1 id="result"></h1>
+
+        <script src="hw2.js"></script>
+
+        <div class = title >GeeksforGeeks Calculator</div>
+        <table border="1">
+           <tr>
+              <td colspan="3"><input type="text" id="calc"/></td>
+              <!-- clr() function will call clr to clear all value -->
+              <td><input type="button" value="c" onclick="clr()"/> </td>
+           </tr>
+           <tr>
+              <!-- create button and assign value to each button -->
+              <!-- dis("1") will call function dis to display value -->
+              <td><input type="button" value="1" onclick="dis('1')"/> </td>
+              <td><input type="button" value="2" onclick="dis('2')"/> </td>
+              <td><input type="button" value="3" onclick="dis('3')"/> </td>
+              <td><input type="button" value="/" onclick="dis('/')"/> </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="4" onclick="dis('4')"/> </td>
+              <td><input type="button" value="5" onclick="dis('5')"/> </td>
+              <td><input type="button" value="6" onclick="dis('6')"/> </td>
+              <td><input type="button" value="-" onclick="dis('-')"/> </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="7" onclick="dis('7')"/> </td>
+              <td><input type="button" value="8" onclick="dis('8')"/> </td>
+              <td><input type="button" value="9" onclick="dis('9')"/> </td>
+              <td><input type="button" value="+" onclick="dis('+')"/> </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="." onclick="dis('.')"/> </td>
+              <td><input type="button" value="0" onclick="dis('0')"/> </td>
+              <!-- solve function call function solve to evaluate value -->
+              <td><input type="button" value="=" onclick="solve()"/> </td>
+              <td><input type="button" value="*" onclick="dis('*')"/> </td>
+           </tr>
+        </table>
+
+    </body>
+
+</html>
